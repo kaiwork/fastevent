@@ -6,8 +6,8 @@ import pyAesCrypt
 
 # get credential file
 cwd = os.getcwd()
-password = os.environ['fast-api-password']
-salt = os.environ['fast-api-salt'].encode('utf-8')
+password = os.environ['fast_api_password']
+salt = os.environ['fast_api_salt'].encode('utf-8')
 encrypted_file_path = "{}/credentials/credentials.json.aes".format(cwd)
 decrypted_file_path = "{}/credentials/credentials.json".format(cwd)
 pyAesCrypt.decryptFile(encrypted_file_path,
