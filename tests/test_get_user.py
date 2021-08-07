@@ -3,7 +3,7 @@ from main import get_current_user
 from fastapi.testclient import TestClient
 
 
-class AuthBypasser: 
+class AuthBypasser:
     """AuthBypasser Class for testing."""
 
     def __init__(self):
