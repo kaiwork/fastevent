@@ -32,7 +32,8 @@ get_current_user = FirebaseCurrentUser(
 
 @app.get("/user/")
 def get_user(current_user: FirebaseClaims = Depends(get_current_user)):
-    """An api to get current user data
+    """
+    An api to get current user data
 
     Args:
         Valid ID Token

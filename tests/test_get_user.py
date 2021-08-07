@@ -4,16 +4,21 @@ from fastapi.testclient import TestClient
 
 
 class AuthBypasser:
-    """AuthBypasser Class for testing
+    """
+    AuthBypasser Class for testing
 
     """
 
     def __init__(self):
+        """
+        Testing data to show is authenticated
+        """
         self.user_id = "is authenticated"
 
 
 def auth_bypass():
-    """mock auth bypasser to be passed into the authenticated test
+    """
+    Mock auth bypasser to be passed into the authenticated test
 
     Returns:
         AuthBypasser: A simple class to send back the required attribute
@@ -25,7 +30,8 @@ client = TestClient(app)
 
 
 def test_get_current_user_not_authenticated():
-    """Test unauthenticated request to get user data
+    """
+    Test unauthenticated request to get user data
 
     Returns:
         an unauthenticated response
@@ -36,7 +42,9 @@ def test_get_current_user_not_authenticated():
 
 
 def test_get_current_user_authenticated():
-    """Test authenticated request to get user data
+    """
+    Test authenticated request to get user data
+
     Returns:
         a authenticated response which is a mock of the user data sent back
     """
