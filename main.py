@@ -17,7 +17,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = decrypted_file_path
 
 app = FastAPI()
 origins = [
-    "http://localhost:4200",
+    "https://fastevent-fec5c.web.app/",
 ]
 
 app.add_middleware(
