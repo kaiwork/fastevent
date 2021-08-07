@@ -129,5 +129,4 @@ dmypy.json
 .pyre/
 
 creds.json
-sphinx-docs/
 credentials/credentials.json

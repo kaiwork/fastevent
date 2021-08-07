@@ -33,7 +33,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Generate documentation
       run: |
-        cp tests/test_get_user.py sphinx-docs/source/files/get_user_test.py
+        cp tests/test_get_user.py sphinx-docs/source/files/test_get_user.py
         cp main.py sphinx-docs/source/files/main.py
         cd sphinx-docs/
         sphinx-apidoc -o source source/files
