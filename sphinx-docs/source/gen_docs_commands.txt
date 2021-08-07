@@ -1,0 +1,5 @@
+cd docs/
+sphinx-quickstart
+pip install sphinx-rtd-theme
+sphinx-apidoc -o source source/files
+make html
