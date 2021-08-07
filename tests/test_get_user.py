@@ -4,10 +4,14 @@ from fastapi.testclient import TestClient
 
 
 class AuthBypasser:
-    """ AuthBypasser Class for testing """
+    """
+    AuthBypasser Class for testing
+    """
 
     def __init__(self):
-        """ Testing data to show is authenticated """
+        """
+        Testing data to show is authenticated 
+        """
         self.user_id = "is authenticated"
 
 
