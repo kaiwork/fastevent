@@ -17,7 +17,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = decrypted_file_path
 
 app = FastAPI()
 origins = [
-    "https://fastevent-fec5c.web.app/",
+    "https://fastevent-fec5c.web.app",
     
 ]
 
