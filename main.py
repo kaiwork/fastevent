@@ -18,11 +18,13 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = decrypted_file_path
 app = FastAPI()
 origins = [
     "https://fastevent-fec5c.web.app/",
+    
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
+    allow_headers=["*"]
 )
 
 get_current_user = FirebaseCurrentUser(
