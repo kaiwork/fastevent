@@ -45,8 +45,7 @@ jobs:
       run: |
         pytest
       env:
-        fast_api_password: ${{ secrets.fast_api_password }}
-        fast_api_salt: ${{ secrets.fast_api_salt }}
+        fast_api_password: ${{ secrets.FAST_API_PASSWORD }}
 
 
 
