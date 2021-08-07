@@ -9,6 +9,8 @@ cwd = os.getcwd()
 password = os.environ['fast_api_password']
 encrypted_file_path = "{}/credentials/credentials.json.aes".format(cwd)
 decrypted_file_path = "{}/credentials/credentials.json".format(cwd)
+print(password)
+
 pyAesCrypt.decryptFile(encrypted_file_path,
                        decrypted_file_path, password)
 
