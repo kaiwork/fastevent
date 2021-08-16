@@ -11,10 +11,10 @@
   
 
   
-  <link rel="stylesheet" href="fastevent-server/_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="fastevent-server/_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="fastevent-server/_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="fastevent-server/_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
 
   
   
@@ -26,17 +26,17 @@
 
   
   <!--[if lt IE 9]>
-    <script src="fastevent-server/_static/js/html5shiv.min.js"></script>
+    <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="fastevent-server/_static/documentation_options.js"></script>
-        <script data-url_root="./" id="documentation_options" src="fastevent-server/_static/documentation_options.js"></script>
-        <script src="fastevent-server/_static/jquery.js"></script>
-        <script src="fastevent-server/_static/underscore.js"></script>
-        <script src="fastevent-server/_static/doctools.js"></script>
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
     
-    <script type="text/javascript" src="fastevent-server/_static/js/theme.js"></script>
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
@@ -90,7 +90,7 @@
 <li><a class="reference internal" href="#">tests package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#tests-conftest-module">tests.conftest module</a></li>
-<li><a class="reference internal" href="#tests-test-get-user-module">tests.test_get_user module</a></li>
+<li><a class="reference internal" href="#module-tests.test_get_user">tests.test_get_user module</a></li>
 <li><a class="reference internal" href="#module-tests">Module contents</a></li>
 </ul>
 </li>
@@ -169,8 +169,45 @@
 <div class="section" id="tests-conftest-module">
 <h2>tests.conftest module<a class="headerlink" href="#tests-conftest-module" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="tests-test-get-user-module">
-<h2>tests.test_get_user module<a class="headerlink" href="#tests-test-get-user-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-tests.test_get_user">
+<span id="tests-test-get-user-module"></span><h2>tests.test_get_user module<a class="headerlink" href="#module-tests.test_get_user" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.test_get_user.AuthBypasser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">tests.test_get_user.</span></span><span class="sig-name descname"><span class="pre">AuthBypasser</span></span><a class="headerlink" href="#tests.test_get_user.AuthBypasser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>AuthBypasser Class for testing.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_get_user.auth_bypass">
+<span class="sig-prename descclassname"><span class="pre">tests.test_get_user.</span></span><span class="sig-name descname"><span class="pre">auth_bypass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_get_user.auth_bypass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mock auth bypasser to be passed into the authenticated test.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>AuthBypasser: A simple class to send back the required attribute</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_get_user.test_get_current_user_authenticated">
+<span class="sig-prename descclassname"><span class="pre">tests.test_get_user.</span></span><span class="sig-name descname"><span class="pre">test_get_current_user_authenticated</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_get_user.test_get_current_user_authenticated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test authenticated request to get user data.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>a authenticated response which is a mock of the user data sent back</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_get_user.test_get_current_user_not_authenticated">
+<span class="sig-prename descclassname"><span class="pre">tests.test_get_user.</span></span><span class="sig-name descname"><span class="pre">test_get_current_user_not_authenticated</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_get_user.test_get_current_user_not_authenticated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test unauthenticated request to get user data.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>an unauthenticated response</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 <div class="section" id="module-tests">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tests" title="Permalink to this headline">¶</a></h2>
