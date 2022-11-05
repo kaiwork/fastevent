@@ -47,7 +47,7 @@ passlib==1.7.4
 pep257==0.7.0
 pluggy==0.13.1
 proto-plus==1.19.0
-protobuf==3.17.3
+protobuf==3.18.3
 psycopg2==2.9.1
 py==1.10.0
 pyAesCrypt==6.0.0
