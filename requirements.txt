@@ -80,6 +80,6 @@ starlette==0.14.2
 toml==0.10.2
 typing-extensions==3.10.0.0
 uritemplate==3.0.1
-urllib3==1.26.6
+urllib3==1.26.19
 uvicorn==0.14.0
 wincertstore==0.2
