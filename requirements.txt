@@ -83,3 +83,4 @@ uritemplate==3.0.1
 urllib3==1.26.6
 uvicorn==0.14.0
 wincertstore==0.2
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
